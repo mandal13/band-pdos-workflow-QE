@@ -1,0 +1,54 @@
+&CONTROL
+   calculation      = 'scf'
+   restart_mode     = 'from_scratch'
+   outdir           = './tmp'
+   prefix           = 'pw'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.0001
+   pseudo_dir       = './'
+/
+&SYSTEM
+   ecutwfc          = 50
+   ecutrho          = 200
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gaussian'
+   input_dft        = 'pbe'
+   ntyp             = 1
+   nat              = 8
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+   mixing_beta      = 0.35
+   startingwfc      = 'random'
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Si 28.085 Si.pz-vbc.UPF
+
+K_POINTS automatic
+6 6 6  0 0 0
+
+CELL_PARAMETERS angstrom
+5.44370237000000 0.00000000000000 0.00000000000000
+0.00000000000000 5.44370237000000 0.00000000000000
+0.00000000000000 0.00000000000000 5.44370237000000
+
+ATOMIC_POSITIONS angstrom
+Si 4.0827767775 4.0827767775 1.3609255925  
+Si 0.0000000000 2.7218511850 2.7218511850  
+Si 4.0827767775 1.3609255925 4.0827767775  
+Si 0.0000000000 0.0000000000 0.0000000000  
+Si 1.3609255925 4.0827767775 4.0827767775  
+Si 2.7218511850 2.7218511850 0.0000000000  
+Si 1.3609255925 1.3609255925 1.3609255925  
+Si 2.7218511850 0.0000000000 2.7218511850  
+

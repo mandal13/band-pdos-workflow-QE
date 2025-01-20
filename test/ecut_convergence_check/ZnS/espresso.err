@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  fermi
+  System call: unlink(2) /var/folders/6w/fk1cxsm5767650wt913m4grw0000gn/T//ompi.fermi.501/pid.6804/1/vader_segment.fermi.501.27da0001.1
+  Error:       No such file or directory (errno 2)
+--------------------------------------------------------------------------
