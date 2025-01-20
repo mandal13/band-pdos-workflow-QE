@@ -33,7 +33,7 @@ Simply provide a **CIF** file, and the workflow will handle everything from stru
 4. For more information, refer to the inline documentation in the scripts:
 
    ```bash
-   python cutoff_convergence.py --help
+   python kpoints_convergence.py --help
 
    
 ## Energy Cutoff Convergence Testing
