@@ -55,5 +55,5 @@ Simply provide a **CIF** file, and the workflow will handle everything from stru
 4. For more information, refer to the inline documentation in the scripts:
 
    ```bash
-   python ecut_convergence.py --help
+   python cutoff_convergence.py --help
    
